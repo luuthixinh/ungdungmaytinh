@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        h1{
+            color: blue}
+      
+        h1{text-align: center;}
+
+        div {text-align: center;}
+    </style>
+</head>
+
+<body>
+<div>
+    <h1>CACULATOR</h1>
+    <input type="text" id="input 1" >
+    <input type="text" id="input 2" >
+<br>
+
+    <br>
+    <button onclick="AddSubect()">ADD</button>
+    <button onclick="SubSubect()">SUB</button>
+    <button onclick="MutSubect()">MUT</button>
+    <button onclick="DivSubect()">DIV</button>
+    <br>
+    <br>
+    <input type="text" readonly id="ketqua" >
+    <br>
+    <br>
+</div>
+<script>
+    function AddSubect(){
+        var a= document.getElementById("input 1").value.trim()
+        var b= document.getElementById("input 2").value.trim()
+        var add = (parseFloat(a) + parseFloat(b) )
+        document.getElementById('ketqua').value = add;
+
+    }
+
+    function SubSubect(){
+        var a= document.getElementById("input 1").value.trim()
+        var b= document.getElementById("input 2").value.trim()
+        var sub = (parseFloat(a) - parseFloat(b) )
+        document.getElementById('ketqua').value = sub;
+    }
+
+    function MutSubect(){
+        var a= document.getElementById("input 1").value.trim()
+        var b= document.getElementById("input 2").value.trim()
+        var mut = (parseFloat(a) * parseFloat(b) )
+        document.getElementById('ketqua').value = mut;
+    }
+
+    function DivSubect(){
+        var a= document.getElementById("input 1").value.trim()
+        var b= document.getElementById("input 2").value.trim()
+        var div = (parseFloat(a) / parseFloat(b) )
+        document.getElementById('ketqua').value = div;
+    }
+</script>
+<br>
+<hr>
+<script>
+
+</script>
+</body>
+</html>
